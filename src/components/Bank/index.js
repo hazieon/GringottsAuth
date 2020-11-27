@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from "react";
 import Profile from "../Profile";
-import LogoutButton from "../LogOutButton";
 import "./index.css";
+import logo from "./Blason_de_Gringotts.webp";
 
 let initialBalance = 0;
 
@@ -26,11 +26,10 @@ function Bank() {
     <div className="user-auth">
       <div className="user-features">
         <Profile />
-        <LogoutButton />
       </div>
 
       <div className="bank-container">
-        <h1>Welcome to Gringotts Bank</h1>
+        <img className="logo" src={logo} />
 
         <h2>{balance}</h2>
         <h3>{input}</h3>

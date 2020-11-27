@@ -10,7 +10,7 @@
   font-family: fantasy;
 }
 
-img {
+.banner {
   width: 512px;
   margin: 90px;
   box-shadow: 0px 0px 3px 2px goldenrod;

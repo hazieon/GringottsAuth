@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={banner} />
+        <img className="banner" src={banner} />
         <LoginButton />
       </header>
     </div>

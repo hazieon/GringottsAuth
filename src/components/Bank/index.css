@@ -3,6 +3,11 @@
   flex-direction: row;
   top: 0px;
 }
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
 .bank-container {
   min-height: 100vh;
