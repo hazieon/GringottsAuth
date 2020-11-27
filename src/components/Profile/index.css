@@ -1,6 +1,15 @@
-img {
-  width: 200px;
+.profile-img {
+  width: 100px;
   position: fixed;
-  top: 0;
-  right: 280;
+  top: -20px;
+  right: -20px;
+}
+
+.auth-container {
+  display: inline-block;
+  align-content: space-between;
+}
+
+.user-text {
+  display: inline-flex;
 }

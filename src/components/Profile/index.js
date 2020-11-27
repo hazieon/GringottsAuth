@@ -11,10 +11,12 @@ const Profile = () => {
   console.log(user);
   return (
     isAuthenticated && (
-      <div>
-        <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
+      <div className="auth-container">
+        <img className="profile-img" src={user.picture} alt={user.name} />
+        <div className="user-text">
+          <h2>{user.name}</h2>
+          <p>{user.email}</p>
+        </div>
       </div>
     )
   );

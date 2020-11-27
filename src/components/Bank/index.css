@@ -1,5 +1,13 @@
+.user-features {
+  display: inline-block;
+  flex-direction: row;
+  top: 0px;
+}
+
 .bank-container {
   background-image: url("gob3.webp");
+  background-repeat: no-repeat;
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;

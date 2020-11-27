@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from "react";
 import Profile from "../Profile";
+import LogoutButton from "../LogOutButton";
 import "./index.css";
 
 let initialBalance = 0;
@@ -22,24 +23,30 @@ function Bank() {
   const [input, setInput] = useState(0);
 
   return (
-    <div className="bank-container">
-      <h1>Welcome to Gringotts Bank</h1>
-      <Profile />
+    <div className="user-auth">
+      <div className="user-features">
+        <Profile />
+        <LogoutButton />
+      </div>
 
-      <h2>{balance}</h2>
-      <h3>{input}</h3>
+      <div className="bank-container">
+        <h1>Welcome to Gringotts Bank</h1>
 
-      <input
-        type="number"
-        onChange={(e) => setInput(Number(e.target.value))}
-        placeholder="gold transaction"
-      />
-      <button onClick={() => dispatch({ type: "deposit", payload: input })}>
-        deposit
-      </button>
-      <button onClick={() => dispatch({ type: "withdraw", payload: input })}>
-        withdraw
-      </button>
+        <h2>{balance}</h2>
+        <h3>{input}</h3>
+
+        <input
+          type="number"
+          onChange={(e) => setInput(Number(e.target.value))}
+          placeholder="gold transaction"
+        />
+        <button onClick={() => dispatch({ type: "deposit", payload: input })}>
+          deposit
+        </button>
+        <button onClick={() => dispatch({ type: "withdraw", payload: input })}>
+          withdraw
+        </button>
+      </div>
     </div>
   );
 }
