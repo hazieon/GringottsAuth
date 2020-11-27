@@ -13,8 +13,14 @@
   }
 }
 
+img {
+  width: 512px;
+  margin: 90px;
+  box-shadow: 0px 0px 3px 2px goldenrod;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-image: url("gringotts.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
