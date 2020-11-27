@@ -1,0 +1,13 @@
+button {
+  padding: 7px;
+  margin: 3px;
+  border-radius: 37px;
+  font-family: "Tahoma";
+}
+
+button:hover {
+  background-color: rgb(167, 141, 76);
+  color: darkslategray;
+  padding: 12px;
+  font-family: "Tahoma";
+}

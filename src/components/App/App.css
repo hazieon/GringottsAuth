@@ -20,7 +20,6 @@ img {
 }
 
 .App-header {
-  background-image: url("gringotts.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;

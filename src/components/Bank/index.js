@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from "react";
 import Profile from "../Profile";
+import "./index.css";
 
 let initialBalance = 0;
 
@@ -21,7 +22,7 @@ function Bank() {
   const [input, setInput] = useState(0);
 
   return (
-    <>
+    <div className="bank-container">
       <h1>Welcome to Gringotts Bank</h1>
       <Profile />
 
@@ -39,7 +40,7 @@ function Bank() {
       <button onClick={() => dispatch({ type: "withdraw", payload: input })}>
         withdraw
       </button>
-    </>
+    </div>
   );
 }
 

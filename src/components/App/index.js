@@ -1,18 +1,21 @@
-import LoginButton from "../LoginButton";
-import "./App.css";
-import LogoutButton from "../LogOutButton";
-import Profile from "../Profile";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "../Home";
 import Bank from "../Bank";
-import banner from "./bank1.png";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={banner} />
-        <LoginButton />
-        <LogoutButton />
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/bank">
+            <Bank />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
