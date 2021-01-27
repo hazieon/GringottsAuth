@@ -1,8 +1,11 @@
 # Auth Hackathon
 
-Today you can build whatever you like! The only requirement is that a user must have to log in to use it.
+A pair programming project to use Auth0. We built the Gringotts Harry Potter bank - your gold is super secure! 
 
-Today we will be using 3rd party services to manage our users, and integrating them with our apps. This means that we wont have to handle password hashing on our server.
+A hackathon task as a part of the School of Code bootcamp. The focus was on implementing the Auth0 secure sign in service.
+We could build whatever we liked, the only requirement is that a user must have to log in to use it.
+
+We used React and Auth0 to build a Harry Potter Gringott's bank account application.
 
 ## Auth options
 
@@ -10,8 +13,9 @@ Today we will be using 3rd party services to manage our users, and integrating t
 
 [Auth0](https://auth0.com/) is a service that will allow you to have users sign into your project. The docs are good and [this tutorial](https://auth0.com/docs/quickstart/spa/react) will help you integrate it with react.
 
-**Firebase**
+## Run the app locally
 
-[Firebase](https://firebase.google.com/) can also serve as a drop in auth solution and can also provide many other services. A little more thought will be required for you to integrate it into react. [This will tell you about how to use it on your page](https://firebase.google.com/docs/web/setup). You will have to search for the Auth sections. Do not go down the cli route for today...
-
-Happy hacking!
+1. clone down the repository
+2. 'npm i' in the project folder to install the dependencies.
+3. 'npm start' to run the app in the browser.
+4. login and manage your money!
